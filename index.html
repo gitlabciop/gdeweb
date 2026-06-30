@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grupo de Desarrollo Electrónico — CIOp / CONICET</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── NAV ─────────────────────────────────────────────────── -->
+  <nav>
+    <div class="nav-logo">
+      <span class="nav-logo-dot"></span>
+      GDE · CIOp / CONICET
+    </div>
+    <ul class="nav-links">
+      <li><a href="#capacidades">Capacidades</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#proceso">Proceso</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a class="nav-cta" href="#contacto">Consultar proyecto</a>
+  </nav>
+
+  <!-- ── HERO ────────────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">Transferencia tecnológica · Ingeniería aplicada</p>
+      <h1 class="hero-title">
+        Transferencia tecnológica <br> e <em>ingeniería</em> aplicada.
+      </h1>
+      <h2 class="section-title reveal"><em>Grupo de desarrollo electrónico</em></h2>
+      <p class="hero-subtitle">
+        Desarrollamos electrónica, firmware y software a medida para la industria.
+        Transformamos necesidades técnicas concretas en soluciones validadas, listas para ser industrializadas.
+      </p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="#proyectos">Ver proyectos</a>
+        <a class="btn-ghost" href="#contacto">Hablar con el equipo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CAPACIDADES ──────────────────────────────────────────── -->
+  <section id="capacidades">
+    <p class="section-eyebrow reveal">Qué hacemos</p>
+    <h2 class="section-title reveal">Capacidades técnicas</h2>
+    <p class="section-lead reveal">
+      Un equipo multidisciplinario con infraestructura de laboratorio y experiencia en el ciclo completo de desarrollo.
+    </p>
+
+    <div class="caps-grid reveal">
+
+      <div class="cap-card">
+        <div class="cap-icon">⚡</div>
+        <div class="cap-title">Electrónica</div>
+        <ul class="cap-list">
+          <li>Diseño analógico y digital</li>
+          <li>Diseño de PCB</li>
+          <li>EMC / EMI</li>
+          <li>Fuentes y potencia</li>
+          <li>Sensores e interfaces</li>
+        </ul>
+      </div>
+
+      <div class="cap-card">
+        <div class="cap-icon">🔬</div>
+        <div class="cap-title">Prototipado y validación</div>
+        <ul class="cap-list">
+          <li>Laboratorio electrónico</li>
+          <li>Ensayos funcionales</li>
+          <li>Integración de sistemas</li>
+          <li>Pruebas de campo</li>
+          <li>Producción pequeña serie</li>
+        </ul>
+      </div>
+
+      <div class="cap-card">
+        <div class="cap-icon">💾</div>
+        <div class="cap-title">Sistemas embebidos</div>
+        <ul class="cap-list">
+          <li>STM32 · ESP32 · RPi · SoC</li>
+          <li>Microcontroladores</li>
+          <li>RTOS</li>
+          <li>Bajo consumo</li>
+          <li>Drivers y firmware</li>
+        </ul>
+      </div>
+
+      <div class="cap-card">
+        <div class="cap-icon">🖥</div>
+        <div class="cap-title">Software</div>
+        <ul class="cap-list">
+          <li>Aplicaciones de escritorio</li>
+          <li>Interfaces gráficas</li>
+          <li>Procesamiento de datos</li>
+          <li>Registro y análisis</li>
+          <li>Herramientas a medida</li>
+        </ul>
+      </div>
+
+      <div class="cap-card">
+        <div class="cap-icon">📡</div>
+        <div class="cap-title">Comunicaciones</div>
+        <ul class="cap-list">
+          <li>CAN Bus · ISOBUS</li>
+          <li>RS485 / Modbus</li>
+          <li>Ethernet</li>
+          <li>GNSS</li>
+          <li>IoT / Telemetría</li>
+        </ul>
+      </div>
+
+      <div class="cap-card">
+        <div class="cap-icon">📏</div>
+        <div class="cap-title">Instrumentación</div>
+        <ul class="cap-list">
+          <li>Celdas de carga</li>
+          <li>Adquisición de datos</li>
+          <li>Calibración y metrología</li>
+          <li>Acondicionamiento de señales</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── PROYECTOS ────────────────────────────────────────────── -->
+  <section id="proyectos">
+    <p class="section-eyebrow reveal">Casos reales</p>
+    <h2 class="section-title reveal">Proyectos destacados</h2>
+    <p class="section-lead reveal">
+      Desarrollos completos transferidos a la industria: desde el diseño electrónico hasta la validación en campo.
+    </p>
+
+    <div class="projects-stack">
+
+      <!-- Proyecto 1: Banderillero -->
+      <div class="project-item reveal">
+        <div class="project-text">
+          <p class="project-label">Proyecto 01 · Agricultura de precisión</p>
+          <h3 class="project-title">Banderillero Satelital</h3>
+          <ul class="project-features">
+            <li>Posicionamiento de alta precisión mediante redes GNSS</li>
+            <li>Guiado visual con pantalla táctil y sistema de luces indicadoras</li>
+            <li>Interfaz de usuario intuitiva y de fácil instalación</li>
+            <li>Electrónica, firmware y software desarrollados íntegramente</li>
+            <li>Configuración de parámetros del equipo (idioma, brillo y sonido)</li>
+          </ul>
+        </div>
+        <div class="project-gallery project-gallery--vertical">
+          <img src="images/banderillero/b4.jpg" alt="Banderillero satelital — vista principal" loading="lazy" />
+          <img src="images/banderillero/b2.jpg" alt="Banderillero satelital — detalle" loading="lazy" />
+          <img src="images/banderillero/b3.jpg" alt="Banderillero satelital — instalación" loading="lazy" />
+          <img src="images/banderillero/b1.jpg" alt="Banderillero satelital — campo" loading="lazy" />
+        </div>
+      </div>
+
+      <!-- Proyecto 2: Pesaje -->
+      <div class="project-item reveal">
+        <div class="project-text">
+          <p class="project-label">Proyecto 02 · Instrumentación agrícola</p>
+          <h3 class="project-title">Sistema de Pesaje Agropecuario</h3>
+          <ul class="project-features">
+            <li>Electrónica de adquisición de alta precisión para celdas de carga</li>
+            <li>Funciones de cero, tara y calibración</li>
+            <li>Integración con banderillero para cálculo de dosis</li>
+            <li>Monitor táctil con comunicación CAN</li>
+            <li>Amplias opciones para distintos tipos de celdas e instalaciones</li>
+            <li>Funciones específicas para fertilizadoras y equipos agrícolas</li>
+          </ul>
+        </div>
+        <div class="project-gallery">
+          <img src="images/pesaje/p4.jpg" alt="Sistema de pesaje — electrónica" loading="lazy" />
+          <img src="images/pesaje/p2.jpg" alt="Sistema de pesaje — electrónica" loading="lazy" />
+          <img src="images/pesaje/p3.jpg" alt="Sistema de pesaje — montaje" loading="lazy" />
+          <img src="images/pesaje/p1.jpg" alt="Sistema de pesaje — campo" loading="lazy" />
+        </div>
+      </div>
+
+      <!-- Proyecto 3: Fertilizadora -->
+      <div class="project-item reveal">
+        <div class="project-text">
+          <p class="project-label">Proyecto 03 · Control electrónico</p>
+          <h3 class="project-title">Controlador para Fertilizadoras Neumáticas y Sembradoras</h3>
+          <ul class="project-features">
+            <li>Control electrónico del motor soplador y sistema dosificador</li>
+            <li>Monitor táctil de 7 pulgadas</li>
+            <li>Comunicación ECU–monitor por protocolo compatible con ISOBUS</li>
+            <li>Sensores de velocidad, nivel de producto y vaciado de tolva</li>
+            <li>Regulación automática de dosis según velocidad de avance</li>
+            <li>Monitoreo en tiempo real, configuración y diagnóstico integrados</li>
+          </ul>
+        </div>
+        <div class="project-gallery project-gallery--vertical">
+          <img src="images/fertilizadora/f1.jpg" alt="Controlador fertilizadora — vista principal" loading="lazy" />
+          <img src="images/fertilizadora/f2.jpg" alt="Controlador fertilizadora — ECU" loading="lazy" />
+          <img src="images/fertilizadora/f3.jpg" alt="Controlador fertilizadora — monitor" loading="lazy" />
+          <img src="images/fertilizadora/f4.jpg" alt="Controlador fertilizadora — campo" loading="lazy" />
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── CLIENTES ─────────────────────────────────────────────── -->
+  <section id="clientes">
+    <p class="section-eyebrow reveal" style="justify-content: center;">Confían en nosotros</p>
+    <h2 class="section-title reveal" style="text-align:center;">Empresas que trabajan con el equipo</h2>
+    <p class="section-lead reveal" style="text-align:center; margin-left:auto; margin-right:auto;">
+      Nuestros desarrollos son adoptados por empresas que necesitan tecnología robusta, validada y lista para producción.
+    </p>
+
+    <div class="clients-grid reveal">
+      <!--
+        PARA AGREGAR CLIENTES:
+        Opción A — Solo nombre:
+          <span class="client-chip">Nombre Empresa</span>
+
+        Opción B — Con logo:
+          <img src="images/clientes/logo-empresa.svg" alt="Nombre Empresa" style="height:40px; filter: brightness(0) invert(1); opacity:0.6;" />
+
+        Opción C — Placeholder hasta tener el logo:
+      -->
+      <!-- <div class="client-logo-slot">LOGO EMPRESA</div> -->
+      <img src="images/logos/yomel.png" alt="YOMEL S.A." style="height:77px;" />
+      <!-- Duplicá este bloque para cada empresa adicional -->
+    </div>
+  </section>
+
+  <!-- ── PROCESO ──────────────────────────────────────────────── -->
+  <section id="proceso">
+    <p class="section-eyebrow reveal">Cómo trabajamos</p>
+    <h2 class="section-title reveal">Del problema al producto</h2>
+    <p class="section-lead reveal">
+      Un proceso estructurado que minimiza el riesgo técnico y asegura que el resultado final sea industrializable.
+    </p>
+
+    <div class="process-flow reveal">
+      <div class="process-step">
+        <div class="step-num">01</div>
+        <div class="step-name">Problema</div>
+        <div class="step-desc">Relevamiento técnico y definición de requerimientos</div>
+      </div>
+      <div class="process-step">
+        <div class="step-num">02</div>
+        <div class="step-name">Diseño</div>
+        <div class="step-desc">Arquitectura de hardware, firmware y software</div>
+      </div>
+      <div class="process-step">
+        <div class="step-num">03</div>
+        <div class="step-name">Prototipo</div>
+        <div class="step-desc">Desarrollo e integración del sistema completo</div>
+      </div>
+      <div class="process-step">
+        <div class="step-num">04</div>
+        <div class="step-name">Validación</div>
+        <div class="step-desc">Ensayos de laboratorio y pruebas de campo</div>
+      </div>
+      <div class="process-step">
+        <div class="step-num">05</div>
+        <div class="step-name">Producto</div>
+        <div class="step-desc">Entrega de documentación y acompañamiento en industrialización</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── RESULTADOS ───────────────────────────────────────────── -->
+  <section id="resultados">
+    <p class="section-eyebrow reveal">Qué entregamos</p>
+    <h2 class="section-title reveal">Resultados concretos</h2>
+    <p class="section-lead reveal">
+      No solo prototipos. Entregamos desarrollos documentados, transferibles y con soporte en el proceso de industrialización.
+    </p>
+    <div class="results-grid reveal">
+      <div class="result-card">
+        <div class="result-icon">✅</div>
+        <div class="result-text">Prototipos funcionales validados en condiciones reales</div>
+      </div>
+      <div class="result-card">
+        <div class="result-icon">🔧</div>
+        <div class="result-text">Electrónica de diseño propio, documentada y trazable</div>
+      </div>
+      <div class="result-card">
+        <div class="result-icon">💻</div>
+        <div class="result-text">Software desarrollado a medida para cada aplicación</div>
+      </div>
+      <div class="result-card">
+        <div class="result-icon">🧪</div>
+        <div class="result-text">Ensayos de laboratorio y campo con registro de datos</div>
+      </div>
+      <div class="result-card">
+        <div class="result-icon">📦</div>
+        <div class="result-text">Transferencia de know-how incluida en el proceso</div>
+      </div>
+      <div class="result-card">
+        <div class="result-icon">🏭</div>
+        <div class="result-text">Acompañamiento en industrialización y escalado</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACTO ─────────────────────────────────────────────── -->
+  <section id="contacto">
+    <p class="section-eyebrow reveal" style="justify-content: center;">Empezá hoy</p>
+    <h2 class="contact-cta-title reveal">¿Tenés un problema técnico?<br>Hablemos.</h2>
+    <p class="contact-cta-sub reveal">
+      Contanos el desafío técnico que enfrentás. Sin compromiso, evaluamos si podemos ayudarte y cómo.
+    </p>
+
+    <div class="contact-cards reveal">
+      <div class="contact-card">
+        <div class="contact-card-label">Correo</div>
+        <div class="contact-card-value">
+          <a href="mailto:vinculacion@ciop.unlp.edu.ar">vinculacion@ciop.unlp.edu.ar</a>
+        </div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card-label">Instagram</div>
+        <div class="contact-card-value">
+          <a href="https://instagram.com/ciop.web" target="_blank" rel="noopener">@ciop.web</a>
+        </div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card-label">Dirección</div>
+        <div class="contact-card-value">Camino Centenario y 506<br>M. B. Gonnet, Buenos Aires</div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card-label">Web institucional</div>
+        <div class="contact-card-value">
+          <a href="https://ciop.conicet.gov.ar/" target="_blank" rel="noopener">ciop.conicet.gov.ar</a>
+        </div>
+      </div>
+    </div>
+
+    <a class="btn-primary" href="mailto:vinculacion@ciop.unlp.edu.ar">Escribirnos ahora →</a>
+  </section>
+
+  <!-- ── FOOTER ───────────────────────────────────────────────── -->
+  <footer>
+    <div class="footer-left">
+      Grupo de Desarrollo Electrónico<br>
+      CIOp · CONICET / UNLP — La Plata, Argentina
+    </div>
+    <div class="footer-right">
+      <a href="https://ciop.conicet.gov.ar/" target="_blank" rel="noopener">CIOp</a>
+      <a href="https://conicet.gov.ar/" target="_blank" rel="noopener">CONICET</a>
+      <a href="https://unlp.edu.ar/" target="_blank" rel="noopener">UNLP</a>
+    </div>
+  </footer>
+
+  <!-- ── SCROLL REVEAL ────────────────────────────────────────── -->
+  <script>
+    const observer = new IntersectionObserver(
+      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    );
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
