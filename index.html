@@ -477,28 +477,7 @@
       modalImage.alt = img.getAttribute('alt') || '';
     };
 
-    let touchStartX = 0;
-    let touchStartY = 0;
-
-    const handleSwipe = (target, onLeft, onRight) => {
-      const deltaX = touchStartX - target;
-      const deltaY = touchStartY - 0;
-      if (Math.abs(deltaX) > 70 && Math.abs(deltaX) > Math.abs(deltaY) * 1.2) {
-        if (deltaX > 0) onLeft();
-        else onRight();
-      }
-    };
-
     modalClose?.addEventListener('click', closeModal);
-    modal?.addEventListener('touchstart', (event) => {
-      const touch = event.touches[0];
-      touchStartX = touch.clientX;
-      touchStartY = touch.clientY;
-    }, { passive: true });
-    modal?.addEventListener('touchend', (event) => {
-      const touch = event.changedTouches[0];
-      handleSwipe(touch.clientX, () => showModalImage(1), () => showModalImage(-1));
-    }, { passive: true });
     modal?.addEventListener('click', (event) => {
       if (event.target === modal) closeModal();
     });
@@ -543,22 +522,6 @@
       slides.forEach((slide, index) => {
         slide.addEventListener('click', () => openModal(gallery, index));
       });
-
-      gallery.addEventListener('touchstart', (event) => {
-        const touch = event.touches[0];
-        touchStartX = touch.clientX;
-        touchStartY = touch.clientY;
-      }, { passive: true });
-      gallery.addEventListener('touchend', (event) => {
-        const touch = event.changedTouches[0];
-        handleSwipe(touch.clientX, () => {
-          activeIndex = (activeIndex + 1) % slides.length;
-          render();
-        }, () => {
-          activeIndex = (activeIndex - 1 + slides.length) % slides.length;
-          render();
-        });
-      }, { passive: true });
 
       prevBtn?.addEventListener('click', () => {
         activeIndex = (activeIndex - 1 + slides.length) % slides.length;
