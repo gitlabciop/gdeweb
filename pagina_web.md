@@ -110,6 +110,37 @@ Grupo de Desarrollo Electrónico
 - Configuración y diagnóstico desde la interfaz de usuario
 - Electrónica y software desarrollados íntegramente por nuestro equipo
 
+4. SISTEMA DE MONITOREO ÓPTICO DE DEFORMACIONES EN ESTRUCTURAS DE HORMIGÓN
+
+![](images/intlas/i1.jpg)
+![](images/intlas/i2.jpg)
+![](images/intlas/i3.jpg)
+![](images/intlas/i4.jpg)
+
+- Interrogador óptico propio basado en láser sintonizable (rango 1527 nm a 1596 nm)
+- Sensores de deformación y temperatura basados en redes de Bragg (FBG)
+- Multiplexado de al menos 40 sensores sobre una misma fibra óptica
+- Celdas de referencia (HCN-13 y CO-12) para calibración espectral estable y auto-referenciada
+- Resolución espectral menor a 1.2 pm RMS y precisión de medición de ±0.3 pm
+- Software de procesamiento en tiempo real desarrollado en Python, multiplataforma, con interfaz gráfica para visualización y registro de espectros
+- Inmunidad a interferencia electromagnética y aptitud para operar en ambientes agresivos o corrosivos
+
+5. ADQUISIDOR DE DATOS ANALÓGICOS ADQCIOp-2C
+
+![](images/adqciop/a1.jpg)
+![](images/adqciop/a2.jpg)
+![](images/adqciop/a3.jpg)
+![](images/adqciop/a4.jpg)
+
+- Dos canales analógicos simultáneos, con expansión a cuatro canales
+- Conversor de 14 bits de resolución basado en microcontrolador
+- Frecuencia de adquisición configurable hasta 10 kHz
+- Entradas conmutables por software entre modo "single-ended" y "full-diferencial"
+- Cinco escalas de entrada seleccionables (±20 mV a ±10 V) para optimizar la resolución según la señal
+- Calibración automática mediante tensiones de referencia internas
+- Interfaz de línea de comandos multiplataforma (consola UNIX) para configuración y control
+- Conectividad USB y protecciones integradas (fusible reemplazable, autoprotección térmica de la fuente)
+
 ## PROBLEMA -> DISEÑO -> PROTOTIPO -> VALIDACIÓN -> PRODUCTO
 
 ## RESULTADOS OBTENIDOS
