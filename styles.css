@@ -156,6 +156,9 @@ nav {
   cursor: pointer;
   border-radius: 4px;
   transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 
 .nav-lang-btn:hover {
@@ -165,6 +168,14 @@ nav {
 .nav-lang-btn.is-active {
   background: var(--accent);
   color: var(--ink);
+}
+
+.lang-flag {
+  width: 16px;
+  height: 11px;
+  object-fit: cover;
+  border-radius: 1px;
+  display: inline-block;
 }
 
 /* ── HERO ────────────────────────────────────────────────── */
