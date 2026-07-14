@@ -1,0 +1,498 @@
+{
+  "es": {
+    "nav": {
+      "logo": "GDE · CIOp / CONICET",
+      "links": {
+        "capacidades": "Capacidades",
+        "proyectos": "Proyectos",
+        "proceso": "Proceso",
+        "contacto": "Contacto"
+      },
+      "cta": "Consultar proyecto"
+    },
+    "hero": {
+      "eyebrow": "Transferencia tecnológica · Ingeniería aplicada",
+      "title": "Transferencia tecnológica <br> e <em>ingeniería</em> aplicada.",
+      "subtitle_label": "<em>Grupo de desarrollo electrónico</em>",
+      "subtitle": "Desarrollamos electrónica, firmware y software a medida para la industria. Transformamos necesidades técnicas concretas en soluciones validadas, listas para ser industrializadas.",
+      "btn_projects": "Ver proyectos",
+      "btn_team": "Hablar con el equipo"
+    },
+    "capacidades": {
+      "eyebrow": "Qué hacemos",
+      "title": "Capacidades técnicas",
+      "lead": "Un equipo multidisciplinario con infraestructura de laboratorio y experiencia en el ciclo completo de desarrollo.",
+      "cards": {
+        "electronica": {
+          "title": "Electrónica",
+          "items": [
+            "Diseño analógico y digital",
+            "Diseño de PCB",
+            "EMC / EMI",
+            "Fuentes y potencia",
+            "Sensores e interfaces"
+          ]
+        },
+        "prototipado": {
+          "title": "Prototipado y validación",
+          "items": [
+            "Laboratorio electrónico",
+            "Ensayos funcionales",
+            "Integración de sistemas",
+            "Pruebas de campo",
+            "Producción pequeña serie"
+          ]
+        },
+        "embebidos": {
+          "title": "Sistemas embebidos",
+          "items": [
+            "STM32 · ESP32 · RPi · SoC",
+            "Microcontroladores",
+            "RTOS",
+            "Bajo consumo",
+            "Drivers y firmware"
+          ]
+        },
+        "software": {
+          "title": "Software",
+          "items": [
+            "Aplicaciones de escritorio",
+            "Interfaces gráficas",
+            "Procesamiento de datos",
+            "Registro y análisis",
+            "Herramientas a medida"
+          ]
+        },
+        "comunicaciones": {
+          "title": "Comunicaciones",
+          "items": [
+            "CAN Bus · ISOBUS",
+            "RS485 / Modbus",
+            "Ethernet",
+            "GNSS",
+            "IoT / Telemetría"
+          ]
+        },
+        "instrumentacion": {
+          "title": "Instrumentación",
+          "items": [
+            "Celdas de carga",
+            "Adquisición de datos",
+            "Calibración y metrología",
+            "Acondicionamiento de señales"
+          ]
+        }
+      }
+    },
+    "proyectos": {
+      "eyebrow": "Casos reales",
+      "title": "Proyectos destacados",
+      "lead": "Desarrollos completos transferidos a la industria: desde el diseño electrónico hasta la validación en campo.",
+      "proyecto_1": {
+        "label": "Proyecto 01 · Control electrónico",
+        "title": "Controlador para Fertilizadoras Neumáticas y Sembradoras",
+        "features": [
+          "Control electrónico del motor soplador y sistema dosificador",
+          "Monitor táctil de 7 pulgadas",
+          "Comunicación ECU–monitor por protocolo compatible con ISOBUS",
+          "Sensores de velocidad, nivel de producto y vaciado de tolva",
+          "Regulación automática de dosis según velocidad de avance",
+          "Monitoreo en tiempo real, configuración y diagnóstico integrados"
+        ]
+      },
+      "proyecto_2": {
+        "label": "Proyecto 02 · Instrumentación agrícola",
+        "title": "Sistema de Pesaje Agropecuario",
+        "features": [
+          "Electrónica de adquisición de alta precisión para celdas de carga",
+          "Funciones de cero, tara y calibración",
+          "Integración con banderillero para cálculo de dosis",
+          "Monitor táctil con comunicación CAN",
+          "Amplias opciones para distintos tipos de celdas e instalaciones",
+          "Funciones específicas para fertilizadoras y equipos agrícolas"
+        ]
+      },
+      "proyecto_3": {
+        "label": "Proyecto 03 · Agricultura de precisión",
+        "title": "Banderillero Satelital",
+        "features": [
+          "Posicionamiento de alta precisión mediante redes GNSS",
+          "Guiado visual con pantalla táctil y sistema de luces indicadoras",
+          "Interfaz de usuario intuitiva y de fácil instalación",
+          "Electrónica, firmware y software desarrollados íntegramente",
+          "Configuración de parámetros del equipo (idioma, brillo y sonido)"
+        ]
+      },
+      "proyecto_4": {
+        "label": "Proyecto 04 · Sistema de monitoreo óptico",
+        "title": "Interrogador óptico basado en láser sintonizable",
+        "features": [
+          "Interrogador óptico propio basado en láser sintonizable (rango 1527 nm a 1596 nm)",
+          "Sensores de deformación y temperatura basados en redes de Bragg (FBG)",
+          "Multiplexado de al menos 40 sensores sobre una misma fibra óptica",
+          "Celdas de referencia (HCN-13 y CO-12) para calibración espectral estable y auto-referenciada",
+          "Resolución espectral menor a 1.2 pm RMS y precisión de medición de ±0.3 pm",
+          "Software de procesamiento en tiempo real desarrollado en Python, multiplataforma, con interfaz gráfica para visualización y registro de espectros",
+          "Inmunidad a interferencia electromagnética y aptitud para operar en ambientes agresivos o corrosivos"
+        ]
+      },
+      "proyecto_5": {
+        "label": "Proyecto 05 · Adquisidor de datos",
+        "title": "Adquisidor de datos analógicos ADQCIOp",
+        "features": [
+          "Dos canales analógicos simultáneos, con expansión a cuatro canales",
+          "Conversor de 14 bits de resolución basado en microcontrolador",
+          "Frecuencia de adquisición configurable hasta 10 kHz",
+          "Entradas conmutables por software entre modo \"single-ended\" y \"full-diferencial\"",
+          "Cinco escalas de entrada seleccionables (±20 mV a ±10 V) para optimizar la resolución según la señal",
+          "Calibración automática mediante tensiones de referencia internas",
+          "Interfaz de línea de comandos multiplataforma (consola UNIX) para configuración y control",
+          "Conectividad USB y protecciones integradas (fusible reemplazable, autoprotección térmica de la fuente)"
+        ]
+      },
+      "proyecto_6": {
+        "label": "Proyecto 06 · Interrogador espectral",
+        "title": "Interrogador espectral para sensores de redes de Bragg — aplicación aeroespacial",
+        "features": [
+          "Unidad optoelectrónica de interrogación para sensores de temperatura y deformación basados en redes de Bragg (FBG)",
+          "Desarrollado e integrado exitosamente en un vehículo espacial (programa VEX-1A, en convenio con VENG S.A. / CONAE)",
+          "Dos líneas de sensores interrogables, con capacidad de hasta 14 sensores por canal",
+          "Resolución de 0,1 °C o 1 µε, con precisión menor a 1 °C o 10 µε",
+          "Rango de operación del gabinete de -10 °C a 70 °C, y de los sensores de -10 °C a 150 °C",
+          "Arquitectura basada en fuente óptica de amplio espectro (SLED), monocromador de alta precisión y electrónica propia de control, comunicación y procesamiento de datos",
+          "Componentes ópticos pasivos (acopladores y circuladores) para el ruteo eficiente de la señal hacia las líneas de sensores"
+        ]
+      }
+    },
+    "clientes": {
+      "eyebrow": "Nuestros clientes y referencias",
+      "title": "Instituciones y empresas con las que trabajamos",
+      "lead": "Nuestros desarrollos son adoptados por empresas que necesitan tecnología robusta, validada y lista para producción."
+    },
+    "proceso": {
+      "eyebrow": "Cómo trabajamos",
+      "title": "Del problema al producto",
+      "lead": "Un proceso estructurado que minimiza el riesgo técnico y asegura que el resultado final sea industrializable.",
+      "steps": [
+        {
+          "num": "01",
+          "name": "Problema",
+          "desc": "Relevamiento técnico y definición de requerimientos"
+        },
+        {
+          "num": "02",
+          "name": "Diseño",
+          "desc": "Arquitectura de hardware, firmware y software"
+        },
+        {
+          "num": "03",
+          "name": "Prototipo",
+          "desc": "Desarrollo e integración del sistema completo"
+        },
+        {
+          "num": "04",
+          "name": "Validación",
+          "desc": "Ensayos de laboratorio y pruebas de campo"
+        },
+        {
+          "num": "05",
+          "name": "Producto",
+          "desc": "Entrega de documentación y acompañamiento en industrialización"
+        }
+      ]
+    },
+    "resultados": {
+      "eyebrow": "Qué entregamos",
+      "title": "Resultados concretos",
+      "lead": "No solo prototipos. Entregamos desarrollos documentados, transferibles y con soporte en el proceso de industrialización.",
+      "items": [
+        "Prototipos funcionales validados en condiciones reales",
+        "Electrónica de diseño propio, documentada y trazable",
+        "Software desarrollado a medida para cada aplicación",
+        "Ensayos de laboratorio y campo con registro de datos",
+        "Transferencia de know-how incluida en el proceso",
+        "Acompañamiento en industrialización y escalado"
+      ]
+    },
+    "contacto": {
+      "eyebrow": "Iniciemos una consulta",
+      "title": "¿Requiere asesoramiento técnico?<br>Nos interesa colaborar.",
+      "subtitle": "Describa el desafío técnico a resolver. Realizaremos una evaluación inicial sin compromiso para determinar cómo podemos asistirle.",
+      "cards": {
+        "email": {
+          "label": "Correo",
+          "value": "vinculacion@ciop.unlp.edu.ar"
+        },
+        "instagram": {
+          "label": "Instagram",
+          "value": "@ciop.web"
+        },
+        "address": {
+          "label": "Dirección",
+          "value": "Camino Centenario y 506<br>M. B. Gonnet, Buenos Aires, Argentina"
+        },
+        "web": {
+          "label": "Web institucional",
+          "value": "ciop.conicet.gov.ar"
+        }
+      },
+      "cta": "Solicitar consulta →"
+    },
+    "footer": {
+      "left": "Grupo de Desarrollo Electrónico<br>CIOp · CONICET / UNLP — La Plata, Argentina",
+      "links": {
+        "ciop": "CIOp",
+        "conicet": "CONICET",
+        "unlp": "UNLP"
+      }
+    }
+  },
+  "en": {
+    "nav": {
+      "logo": "GDE · CIOp / CONICET",
+      "links": {
+        "capacidades": "Capabilities",
+        "proyectos": "Projects",
+        "proceso": "Process",
+        "contacto": "Contact"
+      },
+      "cta": "Request a project"
+    },
+    "hero": {
+      "eyebrow": "Technology transfer · Applied engineering",
+      "title": "Technology transfer <br> and <em>applied</em> engineering.",
+      "subtitle_label": "<em>Electronic Development Group</em>",
+      "subtitle": "We develop custom electronics, firmware and software for industry. We transform specific technical needs into validated solutions, ready for industrialization.",
+      "btn_projects": "View projects",
+      "btn_team": "Talk to the team"
+    },
+    "capacidades": {
+      "eyebrow": "What we do",
+      "title": "Technical Capabilities",
+      "lead": "A multidisciplinary team with laboratory infrastructure and experience in the complete development cycle.",
+      "cards": {
+        "electronica": {
+          "title": "Electronics",
+          "items": [
+            "Analog and digital design",
+            "PCB design",
+            "EMC / EMI",
+            "Power supplies",
+            "Sensors and interfaces"
+          ]
+        },
+        "prototipado": {
+          "title": "Prototyping and validation",
+          "items": [
+            "Electronics laboratory",
+            "Functional testing",
+            "System integration",
+            "Field testing",
+            "Small series production"
+          ]
+        },
+        "embebidos": {
+          "title": "Embedded systems",
+          "items": [
+            "STM32 · ESP32 · RPi · SoC",
+            "Microcontrollers",
+            "RTOS",
+            "Low power",
+            "Drivers and firmware"
+          ]
+        },
+        "software": {
+          "title": "Software",
+          "items": [
+            "Desktop applications",
+            "Graphical interfaces",
+            "Data processing",
+            "Logging and analysis",
+            "Custom tools"
+          ]
+        },
+        "comunicaciones": {
+          "title": "Communications",
+          "items": [
+            "CAN Bus · ISOBUS",
+            "RS485 / Modbus",
+            "Ethernet",
+            "GNSS",
+            "IoT / Telemetry"
+          ]
+        },
+        "instrumentacion": {
+          "title": "Instrumentation",
+          "items": [
+            "Load cells",
+            "Data acquisition",
+            "Calibration and metrology",
+            "Signal conditioning"
+          ]
+        }
+      }
+    },
+    "proyectos": {
+      "eyebrow": "Real cases",
+      "title": "Featured Projects",
+      "lead": "Complete developments transferred to industry: from electronic design to field validation.",
+      "proyecto_1": {
+        "label": "Project 01 · Electronic control",
+        "title": "Controller for Pneumatic Fertilizer Spreaders and Seeders",
+        "features": [
+          "Electronic control of blower motor and dosing system",
+          "7-inch touchscreen monitor",
+          "ECU-monitor communication via ISOBUS-compatible protocol",
+          "Speed sensors, product level and hopper emptying sensors",
+          "Automatic dose regulation according to forward speed",
+          "Real-time monitoring, integrated configuration and diagnostics"
+        ]
+      },
+      "proyecto_2": {
+        "label": "Project 02 · Agricultural instrumentation",
+        "title": "Livestock Weighing System",
+        "features": [
+          "High precision data acquisition electronics for load cells",
+          "Zero, tare and calibration functions",
+          "Integration with guidance system for dose calculation",
+          "Touchscreen monitor with CAN communication",
+          "Wide options for different types of cells and installations",
+          "Specific functions for fertilizer spreaders and agricultural equipment"
+        ]
+      },
+      "proyecto_3": {
+        "label": "Project 03 · Precision agriculture",
+        "title": "Satellite Guidance System",
+        "features": [
+          "High-precision positioning through GNSS networks",
+          "Visual guidance with touchscreen and indicator light system",
+          "Intuitive user interface and easy installation",
+          "Electronics, firmware and software fully developed",
+          "Equipment parameter configuration (language, brightness and sound)"
+        ]
+      },
+      "proyecto_4": {
+        "label": "Project 04 · Optical monitoring system",
+        "title": "Tunable Laser-based Optical Interrogator",
+        "features": [
+          "Own optical interrogator based on tunable laser (range 1527 nm to 1596 nm)",
+          "Strain and temperature sensors based on Bragg gratings (FBG)",
+          "Multiplexing of at least 40 sensors on the same optical fiber",
+          "Reference cells (HCN-13 and CO-12) for stable and self-referenced spectral calibration",
+          "Spectral resolution less than 1.2 pm RMS and measurement accuracy of ±0.3 pm",
+          "Real-time processing software developed in Python, multiplatform, with graphical interface for visualization and spectrum recording",
+          "Electromagnetic interference immunity and ability to operate in aggressive or corrosive environments"
+        ]
+      },
+      "proyecto_5": {
+        "label": "Project 05 · Data acquisition",
+        "title": "ADQCIOp Analog Data Acquisition Module",
+        "features": [
+          "Two simultaneous analog channels, expandable to four",
+          "14-bit resolution converter based on microcontroller",
+          "Configurable acquisition frequency up to 10 kHz",
+          "Inputs switchable by software between \"single-ended\" and \"full-differential\" modes",
+          "Five selectable input ranges (±20 mV to ±10 V) to optimize resolution according to signal",
+          "Automatic calibration using internal reference voltages",
+          "Multiplatform command-line interface (UNIX console) for configuration and control",
+          "USB connectivity and integrated protections (replaceable fuse, thermal self-protection)"
+        ]
+      },
+      "proyecto_6": {
+        "label": "Project 06 · Spectral interrogator",
+        "title": "Spectral Interrogator for Bragg Grating Sensors — Aerospace Application",
+        "features": [
+          "Optoelectronic interrogation unit for temperature and strain sensors based on Bragg gratings (FBG)",
+          "Successfully developed and integrated into a space vehicle (VEX-1A program, in agreement with VENG S.A. / CONAE)",
+          "Two interrogable sensor lines, with capacity for up to 14 sensors per channel",
+          "Resolution of 0.1 °C or 1 µε, with accuracy less than 1 °C or 10 µε",
+          "Cabinet operating range -10 °C to 70 °C, and sensors -10 °C to 150 °C",
+          "Architecture based on broadband optical source (SLED), high-precision monochromator and proprietary control, communication and data processing electronics",
+          "Passive optical components (couplers and circulators) for efficient signal routing to sensor lines"
+        ]
+      }
+    },
+    "clientes": {
+      "eyebrow": "Our clients and references",
+      "title": "Institutions and companies we work with",
+      "lead": "Our developments are adopted by companies that need robust, validated and production-ready technology."
+    },
+    "proceso": {
+      "eyebrow": "How we work",
+      "title": "From problem to product",
+      "lead": "A structured process that minimizes technical risk and ensures the final result is industrializable.",
+      "steps": [
+        {
+          "num": "01",
+          "name": "Problem",
+          "desc": "Technical survey and requirements definition"
+        },
+        {
+          "num": "02",
+          "name": "Design",
+          "desc": "Hardware, firmware and software architecture"
+        },
+        {
+          "num": "03",
+          "name": "Prototype",
+          "desc": "System development and integration"
+        },
+        {
+          "num": "04",
+          "name": "Validation",
+          "desc": "Laboratory testing and field trials"
+        },
+        {
+          "num": "05",
+          "name": "Product",
+          "desc": "Documentation delivery and industrialization support"
+        }
+      ]
+    },
+    "resultados": {
+      "eyebrow": "What we deliver",
+      "title": "Concrete Results",
+      "lead": "Not just prototypes. We deliver documented, transferable developments with support in the industrialization process.",
+      "items": [
+        "Functional prototypes validated under real conditions",
+        "Proprietary electronics, documented and traceable",
+        "Custom software developed for each application",
+        "Laboratory and field testing with data recording",
+        "Know-how transfer included in the process",
+        "Support in industrialization and scaling"
+      ]
+    },
+    "contacto": {
+      "eyebrow": "Let's start a consultation",
+      "title": "Do you need technical advice?<br>We're interested in collaborating.",
+      "subtitle": "Describe the technical challenge to be solved. We will conduct an initial evaluation without obligation to determine how we can assist you.",
+      "cards": {
+        "email": {
+          "label": "Email",
+          "value": "vinculacion@ciop.unlp.edu.ar"
+        },
+        "instagram": {
+          "label": "Instagram",
+          "value": "@ciop.web"
+        },
+        "address": {
+          "label": "Address",
+          "value": "Camino Centenario y 506<br>M. B. Gonnet, Buenos Aires, Argentina"
+        },
+        "web": {
+          "label": "Institutional website",
+          "value": "ciop.conicet.gov.ar"
+        }
+      },
+      "cta": "Request consultation →"
+    },
+    "footer": {
+      "left": "Electronic Development Group<br>CIOp · CONICET / UNLP — La Plata, Argentina",
+      "links": {
+        "ciop": "CIOp",
+        "conicet": "CONICET",
+        "unlp": "UNLP"
+      }
+    }
+  }
+}

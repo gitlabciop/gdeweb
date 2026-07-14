@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>i18n System Demo</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h1 { font-size: 2rem; margin-bottom: 1rem; color: #0A1628; }
+    h2 { font-size: 1.3rem; margin-top: 2rem; margin-bottom: 1rem; color: #0A1628; }
+    .demo-section {
+      margin: 2rem 0;
+      padding: 1.5rem;
+      background: #f9f9f9;
+      border-left: 4px solid #00D4FF;
+      border-radius: 4px;
+    }
+    .code {
+      background: #f0f4f8;
+      padding: 1rem;
+      border-radius: 4px;
+      font-family: 'Courier New', monospace;
+      font-size: 0.9rem;
+      margin: 1rem 0;
+      overflow-x: auto;
+    }
+    .lang-switch {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .lang-btn {
+      padding: 0.5rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      border: 2px solid #00D4FF;
+      background: white;
+      color: #00D4FF;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .lang-btn:hover { background: #00D4FF; color: white; }
+    .lang-btn.active {
+      background: #00D4FF;
+      color: white;
+    }
+    .result {
+      background: white;
+      padding: 1rem;
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      margin-top: 1rem;
+      font-family: 'Courier New', monospace;
+      color: #00D4FF;
+      word-break: break-all;
+    }
+    .example-list {
+      list-style: none;
+      margin-top: 1rem;
+    }
+    .example-list li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Sistema i18n - Demo</h1>
+    <p>Prueba los diferentes atributos y funcionalidades del sistema de internacionalización.</p>
+
+    <div class="lang-switch">
+      <button class="lang-btn active" data-lang="es">Español</button>
+      <button class="lang-btn" data-lang="en">English</button>
+    </div>
+
+    <!-- DEMO 1: data-i18n simple -->
+    <div class="demo-section">
+      <h2>1. Text simple (data-i18n)</h2>
+      <p>Para traducir texto simple, usa el atributo data-i18n con la clave:</p>
+      <div class="code">&lt;p data-i18n="hero.eyebrow"&gt;Texto original&lt;/p&gt;</div>
+      <div class="result" data-i18n="hero.eyebrow">Transferencia tecnológica · Ingeniería aplicada</div>
+    </div>
+
+    <!-- DEMO 2: data-i18n-html -->
+    <div class="demo-section">
+      <h2>2. HTML con etiquetas (data-i18n-html)</h2>
+      <p>Si la traducción tiene HTML, usa data-i18n-html:</p>
+      <div class="code">&lt;h1 data-i18n-html="hero.title"&gt;...&lt;/h1&gt;</div>
+      <div class="result" data-i18n-html="hero.title">Transferencia tecnológica <br> e <em>ingeniería</em> aplicada.</div>
+    </div>
+
+    <!-- DEMO 3: Múltiples traducciones -->
+    <div class="demo-section">
+      <h2>3. Traducción de múltiples elementos</h2>
+      <p>Todos los elementos con data-i18n se actualizan automáticamente:</p>
+      <div class="code">&lt;a href="#" data-i18n="nav.cta"&gt;...&lt;/a&gt;</div>
+      <button style="padding: 0.5rem 1rem; background: #00D4FF; color: #0A1628; border: none; border-radius: 4px; font-weight: 600; cursor: pointer; margin-top: 1rem;" data-i18n="nav.cta">Consultar proyecto</button>
+    </div>
+
+    <!-- DEMO 4: Arrays/Listas -->
+    <div class="demo-section">
+      <h2>4. Listas dinámicas (data-i18n-list)</h2>
+      <p>Para generar &lt;li&gt; items desde un array:</p>
+      <div class="code">&lt;ul data-i18n-list="capacidades.cards.electronica.items"&gt;&lt;/ul&gt;</div>
+      <ul class="example-list" data-i18n-list="capacidades.cards.electronica.items">
+        <li>Item 1</li>
+      </ul>
+    </div>
+
+    <!-- DEMO 5: JavaScript -->
+    <div class="demo-section">
+      <h2>5. Obtener traducción desde JavaScript</h2>
+      <p>Usa la función i18n.t(clave) para obtener traducciones dinámicamente:</p>
+      <div class="code">
+const title = i18n.t('hero.title');<br>
+const subtitle = i18n.t('capacidades.title');<br>
+// O en otro idioma específico:<br>
+const titleEn = i18n.t('hero.title', 'en');
+      </div>
+      <div style="margin-top: 1rem;">
+        <p><strong>Ejemplo en vivo:</strong></p>
+        <div class="result" id="js-result">Cargando...</div>
+      </div>
+    </div>
+
+    <!-- DEMO 6: Información del sistema -->
+    <div class="demo-section">
+      <h2>6. Información del sistema</h2>
+      <p><strong>Idioma actual:</strong> <span id="current-lang">--</span></p>
+      <p><strong>Idiomas disponibles:</strong> ES, EN</p>
+      <p><strong>Almacenamiento:</strong> localStorage (clave 'language')</p>
+    </div>
+  </div>
+
+  <!-- Cargar el script i18n desde la ruta correcta -->
+  <script src="../i18n/i18n.js"></script>
+  
+  <script>
+    // Event listeners para botones de idioma
+    document.querySelectorAll('[data-lang]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const lang = btn.getAttribute('data-lang');
+        i18n.setLanguage(lang);
+        
+        // Actualizar botón activo
+        document.querySelectorAll('[data-lang]').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        
+        // Actualizar idioma mostrado
+        document.getElementById('current-lang').textContent = lang.toUpperCase();
+        
+        // Actualizar ejemplo de JS
+        updateJSExample();
+      });
+    });
+
+    // Función para actualizar el ejemplo de JavaScript
+    function updateJSExample() {
+      const title = i18n.t('hero.title');
+      const lead = i18n.t('capacidades.lead');
+      document.getElementById('js-result').innerHTML = `
+        <strong>hero.title:</strong> "${title}"<br><br>
+        <strong>capacidades.lead:</strong> "${lead}"
+      `;
+    }
+
+    // Escuchar cambios de idioma
+    window.addEventListener('i18n-changed', (e) => {
+      console.log('Idioma cambió a:', e.detail.language);
+      document.getElementById('current-lang').textContent = e.detail.language.toUpperCase();
+      updateJSExample();
+    });
+
+    // Inicializar
+    setTimeout(() => {
+      document.getElementById('current-lang').textContent = i18n.getLanguage().toUpperCase();
+      updateJSExample();
+    }, 500);
+  </script>
+</body>
+</html>

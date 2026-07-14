@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Grupo de Desarrollo Electrónico — CIOp / CONICET</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
   <!-- ── NAV ─────────────────────────────────────────────────── -->
   <nav>
     <div class="nav-logo">
       <span class="nav-logo-dot"></span>
-      GDE · CIOp / CONICET
+      <span data-i18n="nav.logo">GDE · CIOp / CONICET</span>
     </div>
     <ul class="nav-links">
-      <li><a href="#capacidades">Capacidades</a></li>
-      <li><a href="#proyectos">Proyectos</a></li>
-      <li><a href="#proceso">Proceso</a></li>
-      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="#capacidades" data-i18n="nav.links.capacidades">Capacidades</a></li>
+      <li><a href="#proyectos" data-i18n="nav.links.proyectos">Proyectos</a></li>
+      <li><a href="#proceso" data-i18n="nav.links.proceso">Proceso</a></li>
+      <li><a href="#contacto" data-i18n="nav.links.contacto">Contacto</a></li>
     </ul>
-    <a class="nav-cta" href="#contacto">Consultar proyecto</a>
+    <div class="nav-controls">
+      <a class="nav-cta" href="#contacto" data-i18n="nav.cta">Consultar proyecto</a>
+      <div class="nav-lang-switch">
+        <button data-lang="es" class="nav-lang-btn">ES</button>
+        <button data-lang="en" class="nav-lang-btn">EN</button>
+      </div>
+    </div>
   </nav>
 
   <!-- ── HERO ────────────────────────────────────────────────── -->
@@ -31,27 +41,28 @@
     <div class="hero-bg"></div>
 
     <div class="hero-content">
-      <p class="hero-eyebrow">Transferencia tecnológica · Ingeniería aplicada</p>
-      <h1 class="hero-title">
+      <p class="hero-eyebrow" data-i18n="hero.eyebrow">Transferencia tecnológica · Ingeniería aplicada</p>
+      <h1 class="hero-title" data-i18n-html="hero.title">
         Transferencia tecnológica <br> e <em>ingeniería</em> aplicada.
       </h1>
-      <h2 class="section-title reveal"><em>Grupo de desarrollo electrónico</em></h2>
-      <p class="hero-subtitle">
+      <h2 class="section-title reveal" data-i18n-html="hero.subtitle_label"><em>Grupo de desarrollo electrónico</em>
+      </h2>
+      <p class="hero-subtitle" data-i18n="hero.subtitle">
         Desarrollamos electrónica, firmware y software a medida para la industria.
         Transformamos necesidades técnicas concretas en soluciones validadas, listas para ser industrializadas.
       </p>
       <div class="hero-actions">
-        <a class="btn-primary" href="#proyectos">Ver proyectos</a>
-        <a class="btn-ghost" href="#contacto">Hablar con el equipo</a>
+        <a class="btn-primary" href="#proyectos" data-i18n="hero.btn_projects">Ver proyectos</a>
+        <a class="btn-ghost" href="#contacto" data-i18n="hero.btn_team">Hablar con el equipo</a>
       </div>
     </div>
   </section>
 
   <!-- ── CAPACIDADES ──────────────────────────────────────────── -->
   <section id="capacidades">
-    <p class="section-eyebrow reveal">Qué hacemos</p>
-    <h2 class="section-title reveal">Capacidades técnicas</h2>
-    <p class="section-lead reveal">
+    <p class="section-eyebrow reveal" data-i18n="capacidades.eyebrow">Qué hacemos</p>
+    <h2 class="section-title reveal" data-i18n="capacidades.title">Capacidades técnicas</h2>
+    <p class="section-lead reveal" data-i18n="capacidades.lead">
       Un equipo multidisciplinario con infraestructura de laboratorio y experiencia en el ciclo completo de desarrollo.
     </p>
 
@@ -59,8 +70,8 @@
 
       <div class="cap-card">
         <div class="cap-icon">⚡</div>
-        <div class="cap-title">Electrónica</div>
-        <ul class="cap-list">
+        <div class="cap-title" data-i18n="capacidades.cards.electronica.title">Electrónica</div>
+        <ul class="cap-list" data-i18n-list="capacidades.cards.electronica.items">
           <li>Diseño analógico y digital</li>
           <li>Diseño de PCB</li>
           <li>EMC / EMI</li>
@@ -71,8 +82,8 @@
 
       <div class="cap-card">
         <div class="cap-icon">🔬</div>
-        <div class="cap-title">Prototipado y validación</div>
-        <ul class="cap-list">
+        <div class="cap-title" data-i18n="capacidades.cards.prototipado.title">Prototipado y validación</div>
+        <ul class="cap-list" data-i18n-list="capacidades.cards.prototipado.items">
           <li>Laboratorio electrónico</li>
           <li>Ensayos funcionales</li>
           <li>Integración de sistemas</li>
@@ -83,8 +94,8 @@
 
       <div class="cap-card">
         <div class="cap-icon">💾</div>
-        <div class="cap-title">Sistemas embebidos</div>
-        <ul class="cap-list">
+        <div class="cap-title" data-i18n="capacidades.cards.embebidos.title">Sistemas embebidos</div>
+        <ul class="cap-list" data-i18n-list="capacidades.cards.embebidos.items">
           <li>STM32 · ESP32 · RPi · SoC</li>
           <li>Microcontroladores</li>
           <li>RTOS</li>
@@ -95,8 +106,8 @@
 
       <div class="cap-card">
         <div class="cap-icon">🖥</div>
-        <div class="cap-title">Software</div>
-        <ul class="cap-list">
+        <div class="cap-title" data-i18n="capacidades.cards.software.title">Software</div>
+        <ul class="cap-list" data-i18n-list="capacidades.cards.software.items">
           <li>Aplicaciones de escritorio</li>
           <li>Interfaces gráficas</li>
           <li>Procesamiento de datos</li>
@@ -107,8 +118,8 @@
 
       <div class="cap-card">
         <div class="cap-icon">📡</div>
-        <div class="cap-title">Comunicaciones</div>
-        <ul class="cap-list">
+        <div class="cap-title" data-i18n="capacidades.cards.comunicaciones.title">Comunicaciones</div>
+        <ul class="cap-list" data-i18n-list="capacidades.cards.comunicaciones.items">
           <li>CAN Bus · ISOBUS</li>
           <li>RS485 / Modbus</li>
           <li>Ethernet</li>
@@ -119,8 +130,8 @@
 
       <div class="cap-card">
         <div class="cap-icon">📏</div>
-        <div class="cap-title">Instrumentación</div>
-        <ul class="cap-list">
+        <div class="cap-title" data-i18n="capacidades.cards.instrumentacion.title">Instrumentación</div>
+        <ul class="cap-list" data-i18n-list="capacidades.cards.instrumentacion.items">
           <li>Celdas de carga</li>
           <li>Adquisición de datos</li>
           <li>Calibración y metrología</li>
@@ -133,9 +144,9 @@
 
   <!-- ── PROYECTOS ────────────────────────────────────────────── -->
   <section id="proyectos">
-    <p class="section-eyebrow reveal">Casos reales</p>
-    <h2 class="section-title reveal">Proyectos destacados</h2>
-    <p class="section-lead reveal">
+    <p class="section-eyebrow reveal" data-i18n="proyectos.eyebrow">Casos reales</p>
+    <h2 class="section-title reveal" data-i18n="proyectos.title">Proyectos destacados</h2>
+    <p class="section-lead reveal" data-i18n="proyectos.lead">
       Desarrollos completos transferidos a la industria: desde el diseño electrónico hasta la validación en campo.
     </p>
 
@@ -143,9 +154,10 @@
       <!-- Proyecto 1: Fertilizadora -->
       <div class="project-item reveal">
         <div class="project-text">
-          <p class="project-label">Proyecto 01 · Control electrónico</p>
-          <h3 class="project-title">Controlador para Fertilizadoras Neumáticas y Sembradoras</h3>
-          <ul class="project-features">
+          <p class="project-label" data-i18n="proyectos.proyecto_1.label">Proyecto 01 · Control electrónico</p>
+          <h3 class="project-title" data-i18n="proyectos.proyecto_1.title">Controlador para Fertilizadoras Neumáticas y
+            Sembradoras</h3>
+          <ul class="project-features" data-i18n-list="proyectos.proyecto_1.features">
             <li>Control electrónico del motor soplador y sistema dosificador</li>
             <li>Monitor táctil de 7 pulgadas</li>
             <li>Comunicación ECU–monitor por protocolo compatible con ISOBUS</li>
@@ -170,14 +182,16 @@
             </div>
           </div>
           <div class="project-gallery-controls">
-            <button class="project-gallery-btn project-gallery-btn--prev" type="button" aria-label="Foto anterior">←</button>
+            <button class="project-gallery-btn project-gallery-btn--prev" type="button"
+              aria-label="Foto anterior">←</button>
             <div class="project-gallery-dots">
               <button class="project-gallery-dot is-active" type="button" aria-label="Ver foto 1"></button>
               <button class="project-gallery-dot" type="button" aria-label="Ver foto 2"></button>
               <button class="project-gallery-dot" type="button" aria-label="Ver foto 3"></button>
               <button class="project-gallery-dot" type="button" aria-label="Ver foto 4"></button>
             </div>
-            <button class="project-gallery-btn project-gallery-btn--next" type="button" aria-label="Foto siguiente">→</button>
+            <button class="project-gallery-btn project-gallery-btn--next" type="button"
+              aria-label="Foto siguiente">→</button>
           </div>
         </div>
       </div>
@@ -185,9 +199,9 @@
       <!-- Proyecto 2: Pesaje -->
       <div class="project-item reveal">
         <div class="project-text">
-          <p class="project-label">Proyecto 02 · Instrumentación agrícola</p>
-          <h3 class="project-title">Sistema de Pesaje Agropecuario</h3>
-          <ul class="project-features">
+          <p class="project-label" data-i18n="proyectos.proyecto_2.label">Proyecto 02 · Instrumentación agrícola</p>
+          <h3 class="project-title" data-i18n="proyectos.proyecto_2.title">Sistema de Pesaje Agropecuario</h3>
+          <ul class="project-features" data-i18n-list="proyectos.proyecto_2.features">
             <li>Electrónica de adquisición de alta precisión para celdas de carga</li>
             <li>Funciones de cero, tara y calibración</li>
             <li>Integración con banderillero para cálculo de dosis</li>
@@ -212,14 +226,16 @@
             </div>
           </div>
           <div class="project-gallery-controls">
-            <button class="project-gallery-btn project-gallery-btn--prev" type="button" aria-label="Foto anterior">←</button>
+            <button class="project-gallery-btn project-gallery-btn--prev" type="button"
+              aria-label="Foto anterior">←</button>
             <div class="project-gallery-dots">
               <button class="project-gallery-dot is-active" type="button" aria-label="Ver foto 1"></button>
               <button class="project-gallery-dot" type="button" aria-label="Ver foto 2"></button>
               <button class="project-gallery-dot" type="button" aria-label="Ver foto 3"></button>
               <button class="project-gallery-dot" type="button" aria-label="Ver foto 4"></button>
             </div>
-            <button class="project-gallery-btn project-gallery-btn--next" type="button" aria-label="Foto siguiente">→</button>
+            <button class="project-gallery-btn project-gallery-btn--next" type="button"
+              aria-label="Foto siguiente">→</button>
           </div>
         </div>
       </div>
@@ -227,9 +243,9 @@
       <!-- Proyecto 3: Banderillero -->
       <div class="project-item reveal">
         <div class="project-text">
-          <p class="project-label">Proyecto 03 · Agricultura de precisión</p>
-          <h3 class="project-title">Banderillero Satelital</h3>
-          <ul class="project-features">
+          <p class="project-label" data-i18n="proyectos.proyecto_3.label">Proyecto 03 · Agricultura de precisión</p>
+          <h3 class="project-title" data-i18n="proyectos.proyecto_3.title">Banderillero Satelital</h3>
+          <ul class="project-features" data-i18n-list="proyectos.proyecto_3.features">
             <li>Posicionamiento de alta precisión mediante redes GNSS</li>
             <li>Guiado visual con pantalla táctil y sistema de luces indicadoras</li>
             <li>Interfaz de usuario intuitiva y de fácil instalación</li>
@@ -253,14 +269,16 @@
             </div>
           </div>
           <div class="project-gallery-controls">
-            <button class="project-gallery-btn project-gallery-btn--prev" type="button" aria-label="Foto anterior">←</button>
+            <button class="project-gallery-btn project-gallery-btn--prev" type="button"
+              aria-label="Foto anterior">←</button>
             <div class="project-gallery-dots">
               <button class="project-gallery-dot is-active" type="button" aria-label="Ver foto 1"></button>
               <button class="project-gallery-dot" type="button" aria-label="Ver foto 2"></button>
               <button class="project-gallery-dot" type="button" aria-label="Ver foto 3"></button>
               <button class="project-gallery-dot" type="button" aria-label="Ver foto 4"></button>
             </div>
-            <button class="project-gallery-btn project-gallery-btn--next" type="button" aria-label="Foto siguiente">→</button>
+            <button class="project-gallery-btn project-gallery-btn--next" type="button"
+              aria-label="Foto siguiente">→</button>
           </div>
         </div>
       </div>
@@ -268,16 +286,19 @@
       <!-- Proyecto 4: Interrogador láser -->
       <div class="project-item reveal">
         <div class="project-text">
-          <p class="project-label">Proyecto 04 · Sistema de monitoreo óptico</p>
-          <h3 class="project-title">Interrogador óptico basado en láser sintonizable</h3>
-          <ul class="project-features">
+          <p class="project-label" data-i18n="proyectos.proyecto_4.label">Proyecto 04 · Sistema de monitoreo óptico</p>
+          <h3 class="project-title" data-i18n="proyectos.proyecto_4.title">Interrogador óptico basado en láser
+            sintonizable</h3>
+          <ul class="project-features" data-i18n-list="proyectos.proyecto_4.features">
             <li>Interrogador óptico propio basado en láser sintonizable (rango 1527 nm a 1596 nm)</li>
             <li>Sensores de deformación y temperatura basados en redes de Bragg (FBG)</li>
             <li>Multiplexado de al menos 40 sensores sobre una misma fibra óptica</li>
             <li>Celdas de referencia (HCN-13 y CO-12) para calibración espectral estable y auto-referenciada</li>
             <li>Resolución espectral menor a 1.2 pm RMS y precisión de medición de ±0.3 pm</li>
-            <li>Software de procesamiento en tiempo real desarrollado en Python, multiplataforma, con interfaz gráfica para visualización y registro de espectros</li>
-            <li>Inmunidad a interferencia electromagnética y aptitud para operar en ambientes agresivos o corrosivos</li>
+            <li>Software de procesamiento en tiempo real desarrollado en Python, multiplataforma, con interfaz gráfica
+              para visualización y registro de espectros</li>
+            <li>Inmunidad a interferencia electromagnética y aptitud para operar en ambientes agresivos o corrosivos
+            </li>
           </ul>
         </div>
         <div class="project-gallery" data-carousel>
@@ -299,7 +320,8 @@
             </div>
           </div>
           <div class="project-gallery-controls">
-            <button class="project-gallery-btn project-gallery-btn--prev" type="button" aria-label="Foto anterior">←</button>
+            <button class="project-gallery-btn project-gallery-btn--prev" type="button"
+              aria-label="Foto anterior">←</button>
             <div class="project-gallery-dots">
               <button class="project-gallery-dot is-active" type="button" aria-label="Ver foto 1"></button>
               <button class="project-gallery-dot" type="button" aria-label="Ver foto 2"></button>
@@ -307,7 +329,8 @@
               <button class="project-gallery-dot" type="button" aria-label="Ver foto 4"></button>
               <button class="project-gallery-dot" type="button" aria-label="Ver foto 5"></button>
             </div>
-            <button class="project-gallery-btn project-gallery-btn--next" type="button" aria-label="Foto siguiente">→</button>
+            <button class="project-gallery-btn project-gallery-btn--next" type="button"
+              aria-label="Foto siguiente">→</button>
           </div>
         </div>
       </div>
@@ -315,17 +338,19 @@
       <!-- Proyecto 5: Adquisidor de datos -->
       <div class="project-item reveal">
         <div class="project-text">
-          <p class="project-label">Proyecto 05 · Adquisidor de datos</p>
-          <h3 class="project-title">Adquisidor de datos analógicos ADQCIOp</h3>
-          <ul class="project-features">
+          <p class="project-label" data-i18n="proyectos.proyecto_5.label">Proyecto 05 · Adquisidor de datos</p>
+          <h3 class="project-title" data-i18n="proyectos.proyecto_5.title">Adquisidor de datos analógicos ADQCIOp</h3>
+          <ul class="project-features" data-i18n-list="proyectos.proyecto_5.features">
             <li>Dos canales analógicos simultáneos, con expansión a cuatro canales</li>
             <li>Conversor de 14 bits de resolución basado en microcontrolador</li>
             <li>Frecuencia de adquisición configurable hasta 10 kHz</li>
             <li>Entradas conmutables por software entre modo "single-ended" y "full-diferencial"</li>
-            <li>Cinco escalas de entrada seleccionables (±20 mV a ±10 V) para optimizar la resolución según la señal</li>
+            <li>Cinco escalas de entrada seleccionables (±20 mV a ±10 V) para optimizar la resolución según la señal
+            </li>
             <li>Calibración automática mediante tensiones de referencia internas</li>
             <li>Interfaz de línea de comandos multiplataforma (consola UNIX) para configuración y control</li>
-            <li>Conectividad USB y protecciones integradas (fusible reemplazable, autoprotección térmica de la fuente)</li>
+            <li>Conectividad USB y protecciones integradas (fusible reemplazable, autoprotección térmica de la fuente)
+            </li>
           </ul>
         </div>
         <div class="project-gallery" data-carousel>
@@ -338,12 +363,14 @@
             </div>
           </div>
           <div class="project-gallery-controls">
-            <button class="project-gallery-btn project-gallery-btn--prev" type="button" aria-label="Foto anterior">←</button>
+            <button class="project-gallery-btn project-gallery-btn--prev" type="button"
+              aria-label="Foto anterior">←</button>
             <div class="project-gallery-dots">
               <button class="project-gallery-dot is-active" type="button" aria-label="Ver foto 1"></button>
               <button class="project-gallery-dot" type="button" aria-label="Ver foto 2"></button>
             </div>
-            <button class="project-gallery-btn project-gallery-btn--next" type="button" aria-label="Foto siguiente">→</button>
+            <button class="project-gallery-btn project-gallery-btn--next" type="button"
+              aria-label="Foto siguiente">→</button>
           </div>
         </div>
       </div>
@@ -351,16 +378,21 @@
       <!-- Proyecto 6: Interrogador espectral-->
       <div class="project-item reveal">
         <div class="project-text">
-          <p class="project-label">Proyecto 06 · Interrogador espectral</p>
-          <h3 class="project-title">Interrogador espectral para sensores de redes de Bragg — aplicación aeroespacial</h3>
-          <ul class="project-features">
-            <li>Unidad optoelectrónica de interrogación para sensores de temperatura y deformación basados en redes de Bragg (FBG)</li>
-            <li>Desarrollado e integrado exitosamente en un vehículo espacial (programa VEX-1A, en convenio con VENG S.A. / CONAE)</li>
+          <p class="project-label" data-i18n="proyectos.proyecto_6.label">Proyecto 06 · Interrogador espectral</p>
+          <h3 class="project-title" data-i18n="proyectos.proyecto_6.title">Interrogador espectral para sensores de redes
+            de Bragg — aplicación aeroespacial</h3>
+          <ul class="project-features" data-i18n-list="proyectos.proyecto_6.features">
+            <li>Unidad optoelectrónica de interrogación para sensores de temperatura y deformación basados en redes de
+              Bragg (FBG)</li>
+            <li>Desarrollado e integrado exitosamente en un vehículo espacial (programa VEX-1A, en convenio con VENG
+              S.A. / CONAE)</li>
             <li>Dos líneas de sensores interrogables, con capacidad de hasta 14 sensores por canal</li>
             <li>Resolución de 0,1 °C o 1 µε, con precisión menor a 1 °C o 10 µε</li>
             <li>Rango de operación del gabinete de -10 °C a 70 °C, y de los sensores de -10 °C a 150 °C</li>
-            <li>Arquitectura basada en fuente óptica de amplio espectro (SLED), monocromador de alta precisión y electrónica propia de control, comunicación y procesamiento de datos</li>
-            <li>Componentes ópticos pasivos (acopladores y circuladores) para el ruteo eficiente de la señal hacia las líneas de sensores</li>
+            <li>Arquitectura basada en fuente óptica de amplio espectro (SLED), monocromador de alta precisión y
+              electrónica propia de control, comunicación y procesamiento de datos</li>
+            <li>Componentes ópticos pasivos (acopladores y circuladores) para el ruteo eficiente de la señal hacia las
+              líneas de sensores</li>
           </ul>
         </div>
         <div class="project-gallery" data-carousel>
@@ -379,14 +411,16 @@
             </div>
           </div>
           <div class="project-gallery-controls">
-            <button class="project-gallery-btn project-gallery-btn--prev" type="button" aria-label="Foto anterior">←</button>
+            <button class="project-gallery-btn project-gallery-btn--prev" type="button"
+              aria-label="Foto anterior">←</button>
             <div class="project-gallery-dots">
               <button class="project-gallery-dot is-active" type="button" aria-label="Ver foto 1"></button>
               <button class="project-gallery-dot" type="button" aria-label="Ver foto 2"></button>
               <button class="project-gallery-dot" type="button" aria-label="Ver foto 3"></button>
               <button class="project-gallery-dot" type="button" aria-label="Ver foto 4"></button>
             </div>
-            <button class="project-gallery-btn project-gallery-btn--next" type="button" aria-label="Foto siguiente">→</button>
+            <button class="project-gallery-btn project-gallery-btn--next" type="button"
+              aria-label="Foto siguiente">→</button>
           </div>
         </div>
       </div>
@@ -396,10 +430,14 @@
 
   <!-- ── CLIENTES ─────────────────────────────────────────────── -->
   <section id="clientes">
-    <p class="section-eyebrow reveal" style="justify-content: center;">Nuestros clientes y referencias</p>
-    <h2 class="section-title reveal" style="text-align:center;">Instituciones y empresas con las que trabajamos</h2>
-    <p class="section-lead reveal" style="text-align:center; margin-left:auto; margin-right:auto;">
-      Nuestros desarrollos son adoptados por empresas que necesitan tecnología robusta, validada y lista para producción.
+    <p class="section-eyebrow reveal" style="justify-content: center;" data-i18n="clientes.eyebrow">Nuestros clientes y
+      referencias</p>
+    <h2 class="section-title reveal" style="text-align:center;" data-i18n="clientes.title">Instituciones y empresas con
+      las que trabajamos</h2>
+    <p class="section-lead reveal" style="text-align:center; margin-left:auto; margin-right:auto;"
+      data-i18n="clientes.lead">
+      Nuestros desarrollos son adoptados por empresas que necesitan tecnología robusta, validada y lista para
+      producción.
     </p>
 
     <div class="clients-grid reveal">
@@ -424,110 +462,124 @@
 
   <!-- ── PROCESO ──────────────────────────────────────────────── -->
   <section id="proceso">
-    <p class="section-eyebrow reveal">Cómo trabajamos</p>
-    <h2 class="section-title reveal">Del problema al producto</h2>
-    <p class="section-lead reveal">
+    <p class="section-eyebrow reveal" data-i18n="proceso.eyebrow">Cómo trabajamos</p>
+    <h2 class="section-title reveal" data-i18n="proceso.title">Del problema al producto</h2>
+    <p class="section-lead reveal" data-i18n="proceso.lead">
       Un proceso estructurado que minimiza el riesgo técnico y asegura que el resultado final sea industrializable.
     </p>
 
     <div class="process-flow reveal">
       <div class="process-step">
         <div class="step-num">01</div>
-        <div class="step-name">Problema</div>
-        <div class="step-desc">Relevamiento técnico y definición de requerimientos</div>
+        <div class="step-name" data-i18n="proceso.steps.0.name">Problema</div>
+        <div class="step-desc" data-i18n="proceso.steps.0.desc">Relevamiento técnico y definición de requerimientos
+        </div>
       </div>
       <div class="process-step">
         <div class="step-num">02</div>
-        <div class="step-name">Diseño</div>
-        <div class="step-desc">Arquitectura de hardware, firmware y software</div>
+        <div class="step-name" data-i18n="proceso.steps.1.name">Diseño</div>
+        <div class="step-desc" data-i18n="proceso.steps.1.desc">Arquitectura de hardware, firmware y software</div>
       </div>
       <div class="process-step">
         <div class="step-num">03</div>
-        <div class="step-name">Prototipo</div>
-        <div class="step-desc">Desarrollo e integración del sistema completo</div>
+        <div class="step-name" data-i18n="proceso.steps.2.name">Prototipo</div>
+        <div class="step-desc" data-i18n="proceso.steps.2.desc">Desarrollo e integración del sistema completo</div>
       </div>
       <div class="process-step">
         <div class="step-num">04</div>
-        <div class="step-name">Validación</div>
-        <div class="step-desc">Ensayos de laboratorio y pruebas de campo</div>
+        <div class="step-name" data-i18n="proceso.steps.3.name">Validación</div>
+        <div class="step-desc" data-i18n="proceso.steps.3.desc">Ensayos de laboratorio y pruebas de campo</div>
       </div>
       <div class="process-step">
         <div class="step-num">05</div>
-        <div class="step-name">Producto</div>
-        <div class="step-desc">Entrega de documentación y acompañamiento en industrialización</div>
+        <div class="step-name" data-i18n="proceso.steps.4.name">Producto</div>
+        <div class="step-desc" data-i18n="proceso.steps.4.desc">Entrega de documentación y acompañamiento en
+          industrialización</div>
       </div>
     </div>
   </section>
 
   <!-- ── RESULTADOS ───────────────────────────────────────────── -->
   <section id="resultados">
-    <p class="section-eyebrow reveal">Qué entregamos</p>
-    <h2 class="section-title reveal">Resultados concretos</h2>
-    <p class="section-lead reveal">
-      No solo prototipos. Entregamos desarrollos documentados, transferibles y con soporte en el proceso de industrialización.
+    <p class="section-eyebrow reveal" data-i18n="resultados.eyebrow">Qué entregamos</p>
+    <h2 class="section-title reveal" data-i18n="resultados.title">Resultados concretos</h2>
+    <p class="section-lead reveal" data-i18n="resultados.lead">
+      No solo prototipos. Entregamos desarrollos documentados, transferibles y con soporte en el proceso de
+      industrialización.
     </p>
     <div class="results-grid reveal">
       <div class="result-card">
         <div class="result-icon">✅</div>
-        <div class="result-text">Prototipos funcionales validados en condiciones reales</div>
+        <div class="result-text" data-i18n="resultados.items.0">Prototipos funcionales validados en condiciones reales
+        </div>
       </div>
       <div class="result-card">
         <div class="result-icon">🔧</div>
-        <div class="result-text">Electrónica de diseño propio, documentada y trazable</div>
+        <div class="result-text" data-i18n="resultados.items.1">Electrónica de diseño propio, documentada y trazable
+        </div>
       </div>
       <div class="result-card">
         <div class="result-icon">💻</div>
-        <div class="result-text">Software desarrollado a medida para cada aplicación</div>
+        <div class="result-text" data-i18n="resultados.items.2">Software desarrollado a medida para cada aplicación
+        </div>
       </div>
       <div class="result-card">
         <div class="result-icon">🧪</div>
-        <div class="result-text">Ensayos de laboratorio y campo con registro de datos</div>
+        <div class="result-text" data-i18n="resultados.items.3">Ensayos de laboratorio y campo con registro de datos
+        </div>
       </div>
       <div class="result-card">
         <div class="result-icon">📦</div>
-        <div class="result-text">Transferencia de know-how incluida en el proceso</div>
+        <div class="result-text" data-i18n="resultados.items.4">Transferencia de know-how incluida en el proceso</div>
       </div>
       <div class="result-card">
         <div class="result-icon">🏭</div>
-        <div class="result-text">Acompañamiento en industrialización y escalado</div>
+        <div class="result-text" data-i18n="resultados.items.5">Acompañamiento en industrialización y escalado</div>
       </div>
     </div>
   </section>
 
   <!-- ── CONTACTO ─────────────────────────────────────────────── -->
   <section id="contacto">
-    <p class="section-eyebrow reveal" style="justify-content: center;">Iniciemos una consulta</p>
-    <h2 class="contact-cta-title reveal">¿Requiere asesoramiento técnico?<br>Nos interesa colaborar.</h2>
-    <p class="contact-cta-sub reveal">
-      Describa el desafío técnico a resolver. Realizaremos una evaluación inicial sin compromiso para determinar cómo podemos asistirle.
+    <p class="section-eyebrow reveal" style="justify-content: center;" data-i18n="contacto.eyebrow">Iniciemos una
+      consulta</p>
+    <h2 class="contact-cta-title reveal" data-i18n-html="contacto.title">¿Requiere asesoramiento técnico?<br>Nos
+      interesa colaborar.</h2>
+    <p class="contact-cta-sub reveal" data-i18n="contacto.subtitle">
+      Describa el desafío técnico a resolver. Realizaremos una evaluación inicial sin compromiso para determinar cómo
+      podemos asistirle.
     </p>
 
     <div class="contact-cards reveal">
       <div class="contact-card">
-        <div class="contact-card-label">Correo</div>
+        <div class="contact-card-label" data-i18n="contacto.cards.email.label">Correo</div>
         <div class="contact-card-value">
-          <a href="mailto:vinculacion@ciop.unlp.edu.ar">vinculacion@ciop.unlp.edu.ar</a>
+          <a href="mailto:vinculacion@ciop.unlp.edu.ar"
+            data-i18n="contacto.cards.email.value">vinculacion@ciop.unlp.edu.ar</a>
         </div>
       </div>
       <div class="contact-card">
-        <div class="contact-card-label">Instagram</div>
+        <div class="contact-card-label" data-i18n="contacto.cards.instagram.label">Instagram</div>
         <div class="contact-card-value">
-          <a href="https://instagram.com/ciop.web" target="_blank" rel="noopener">@ciop.web</a>
+          <a href="https://instagram.com/ciop.web" target="_blank" rel="noopener"
+            data-i18n="contacto.cards.instagram.value">@ciop.web</a>
         </div>
       </div>
       <div class="contact-card">
-        <div class="contact-card-label">Dirección</div>
-        <div class="contact-card-value">Camino Centenario y 506<br>M. B. Gonnet, Buenos Aires, Argentina</div>
+        <div class="contact-card-label" data-i18n="contacto.cards.address.label">Dirección</div>
+        <div class="contact-card-value" data-i18n-html="contacto.cards.address.value">Camino Centenario y 506<br>M. B.
+          Gonnet, Buenos Aires, Argentina</div>
       </div>
       <div class="contact-card">
-        <div class="contact-card-label">Web institucional</div>
+        <div class="contact-card-label" data-i18n="contacto.cards.web.label">Web institucional</div>
         <div class="contact-card-value">
-          <a href="https://ciop.conicet.gov.ar/" target="_blank" rel="noopener">ciop.conicet.gov.ar</a>
+          <a href="https://ciop.conicet.gov.ar/" target="_blank" rel="noopener"
+            data-i18n="contacto.cards.web.value">ciop.conicet.gov.ar</a>
         </div>
       </div>
     </div>
 
-    <a class="btn-primary" href="mailto:vinculacion@ciop.unlp.edu.ar">Solicitar consulta →</a>
+    <a class="btn-primary" href="mailto:vinculacion@ciop.unlp.edu.ar" data-i18n="contacto.cta">Solicitar consulta →</a>
   </section>
 
   <div class="project-gallery-modal" aria-hidden="true">
@@ -543,14 +595,14 @@
 
   <!-- ── FOOTER ───────────────────────────────────────────────── -->
   <footer>
-    <div class="footer-left">
+    <div class="footer-left" data-i18n-html="footer.left">
       Grupo de Desarrollo Electrónico<br>
       CIOp · CONICET / UNLP — La Plata, Argentina
     </div>
     <div class="footer-right">
-      <a href="https://ciop.conicet.gov.ar/" target="_blank" rel="noopener">CIOp</a>
-      <a href="https://conicet.gov.ar/" target="_blank" rel="noopener">CONICET</a>
-      <a href="https://unlp.edu.ar/" target="_blank" rel="noopener">UNLP</a>
+      <a href="https://ciop.conicet.gov.ar/" target="_blank" rel="noopener" data-i18n="footer.links.ciop">CIOp</a>
+      <a href="https://conicet.gov.ar/" target="_blank" rel="noopener" data-i18n="footer.links.conicet">CONICET</a>
+      <a href="https://unlp.edu.ar/" target="_blank" rel="noopener" data-i18n="footer.links.unlp">UNLP</a>
     </div>
   </footer>
 
@@ -669,5 +721,9 @@
     });
   </script>
 
+  <!-- ── i18n SCRIPT ──────────────────────────────────────────────── -->
+  <script src="./i18n/i18n.js"></script>
+
 </body>
+
 </html>
